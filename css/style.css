@@ -1,0 +1,144 @@
+.shop_img{
+    width: 100px;
+    
+}
+.container{
+  width: 1000px;
+  margin:  0 auto;
+}
+.menu{
+  background:rgb(132, 197, 219, 0.3);
+  width: 200px;
+  padding: 15px;
+ 
+}
+.is-active{
+  display: none;
+}
+.nav_list{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 60%;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header{
+  background:#7ca5d6;
+
+}
+.nav_link{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+.logo{
+  border-radius: 10px;
+  font-size: 25px;
+  border: 3px solid ;
+  padding: 5px;
+}
+.footer{
+  background: #7ca5d6;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 3px;
+}
+.footer_text{
+  border-radius: 10px;
+  font-size: 15px;
+  border: 3px solid ;
+  padding: 5px;
+}
+.main{
+
+background:#b5cce8 ;
+  padding: 10px;
+}
+.google_title{
+  color: black;
+
+}
+.dark{
+  background: black;
+  border-radius: 200px ;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.light{
+  background: white;
+  border-radius: 200px ;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.burger_line{
+  background: black;
+  width: 50px;
+  height: 10px;
+  margin-bottom: 10px;
+  
+}
+.burger{
+  display: none;
+}
+@media (max-width: 1000px){
+  .nav_list{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -400px;
+    height: 50%;
+    top: 100px;
+    z-index: 2;
+    background:#7ca5d6 ;
+    padding: 30px 20px;
+    transform: translateX(100%);
+    transition: 1s;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+  .container{
+    width: 600px;
+  }
+  .nav_list-active{
+     transform: translateX(0);
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .active .burger_line1{
+    transform: translate(0px) rotate(-40deg);
+    margin-bottom: 10px;
+    transition: 1s;
+ }
+ .active .burger_line2{
+  opacity: 0;
+ }
+
+.active .burger_line3{
+  transform: translate(0px,-40px) rotate(40deg);
+  transition: 1s;
+}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
